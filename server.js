@@ -9,7 +9,7 @@ import pathHandler from "./src/middlewares/pathhandler.js"
 
 //init
 const server = express()
-const port = 9000
+const port = process.env.PORT
 const ready = async() => {
     console.log(`server ready in ${port}`)
     await dbConnect()
