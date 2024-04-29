@@ -5,7 +5,7 @@ import { engine } from "express-handlebars"
 import dbConnect from "./src/utils/db.Connect.js"
 import indexRouter from "./src/Router/indexRouter.js"
 import errorHandler from "./src/middlewares/errorHandler.js"
-import pathHandler from "./src/middlewares/pathhandler.js"
+
 
 
 //init
@@ -31,6 +31,5 @@ server.use(express.static('public'))
 //router
 server.use("/",indexRouter )           //primero leer todas las rutass
 server.use(errorHandler)               //catchear los errores de endpointsss
-server.use(pathHandler)                //errores de rutaa
 
 
