@@ -7,7 +7,7 @@ document.getElementById('form').addEventListener('submit', async (e) => {
         email: email.value, 
         password: password.value 
     };
-    email.value  = ""
+    
     password.value = ""
     try {
         const response = await fetch('/created', {
