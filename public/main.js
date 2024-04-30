@@ -1,5 +1,5 @@
-document.getElementById('form').addEventListener('submit', async (e) => {
-    const incorrecto = document.getElementById('incorrecta')
+   const incorrecto = document.getElementById('incorrecta')
+   document.getElementById('form').addEventListener('submit', async (e) => {
     incorrecto.style.display = 'block'
     e.preventDefault();
     let {email, password} = e.target
@@ -23,7 +23,3 @@ document.getElementById('form').addEventListener('submit', async (e) => {
         console.error('Error:', error);
     }
 });
-
-document.getElementById('pass').addEventListener('click', () => {
-    incorrecto.style.display = 'none'
-})

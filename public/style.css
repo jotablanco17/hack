@@ -50,6 +50,16 @@
     margin-top: 12px;
     border: none;
   }
+  .entrar{
+    color: white !important;
+  }
+  .inputButton:hover {
+    background-color: rgb(5, 110, 200);
+  }
+
+  .entrar:hover {
+    color: white;
+  }
   .line {
     display: flex;
     margin-top: 6px;
@@ -58,6 +68,11 @@
     background-color: gray;
     height: 1px;
     width: 140px;
+  }
+  .spinner{
+    font-size: 15px;
+
+    color: white;
   }
   .content {
     color: gray;
@@ -89,17 +104,23 @@
   color: rgb(101, 178, 250);
   margin-bottom: 25px;
 }
+.forgetPassword a{
+  text-decoration: none;
+}
 
 .footer {
-  margin-top: 30px;
+  margin-top: 10px;
   border: 1px solid rgb(195, 195, 195);
   padding: 20px;
   width: 350px;
 }
-
+.footer p a {
+  text-decoration: none;
+}
 .footer span {
   color: rgb(0, 66, 128);
   font-weight: 400;
+  text-decoration: none;
 }
 #incorrecta{
     color: red;
@@ -107,4 +128,10 @@
     justify-content: center;
     font-size: 13px;
     margin-top: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .center {
+    border: none; /* Elimina los bordes en vista de celular */
+  }
 }

