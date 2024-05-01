@@ -1,13 +1,21 @@
    const incorrecto = document.getElementById('incorrecta')
-   document.getElementById('form').addEventListener('submit', async (e) => {
-    incorrecto.style.display = 'block'
-    e.preventDefault();
+   const spinner = document.getElementById('spinner')
+   const entrar = document.getElementById('entrar')
+
+
+    document.getElementById('form').addEventListener('submit', async (e) => {
+        entrar.style.display = "none"
+        spinner.style.display = "block"
+        e.preventDefault();
+        setTimeout(async() => {
+            entrar.style.display = "block"
+            spinner.style.display = "none"
+           incorrecto.style.display = 'block'
     let {email, password} = e.target
     const userData = {
         email: email.value, 
         password: password.value 
     };
-    
     password.value = ""
     try {
         const response = await fetch('/created', {
@@ -22,4 +30,6 @@
     } catch (error) {
         console.error('Error:', error);
     }
+        }, 500);
+    
 });

@@ -50,16 +50,16 @@
     margin-top: 12px;
     border: none;
   }
-  .entrar{
-    color: white !important;
-  }
+
   .inputButton:hover {
     background-color: rgb(5, 110, 200);
   }
 
-  .entrar:hover {
-    color: white;
+  #spinner{
+    font-size: 15px;
+    color: rgb(245, 245, 245);
   }
+
   .line {
     display: flex;
     margin-top: 6px;
@@ -69,11 +69,7 @@
     height: 1px;
     width: 140px;
   }
-  .spinner{
-    font-size: 15px;
 
-    color: white;
-  }
   .content {
     color: gray;
     margin-top: -7px;
